@@ -106,7 +106,6 @@ img {
 }
 
 .link-mail-tel {
-  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -135,7 +134,6 @@ img {
 .link-mail-tel:hover,
 .link-mail-tel:focus {
   color: #2196f3;
-  
 }
 
 /* .main-page {} */
@@ -151,8 +149,8 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient( rgba(47, 48, 58, 0.4)),
-  url(../images/Img-geroi.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+    url(../images/Img-geroi.jpg);
   background-position: center;
 }
 .section-title {
@@ -175,16 +173,11 @@ img {
   width: 70px;
   height: 70px;
   border-radius: 4px;
-  fill: Solid #2196f3;
 }
 
-.detail-icon:hover:focus {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+.li-detail:hover,
+.li-detail:focus {
+  fill: #2196f3;
 }
 .section-foto {
   padding-bottom: 94px;
@@ -437,16 +430,19 @@ img {
   padding-top: 16px;
   padding-bottom: 30px;
 }
+.comand-image:hover
+.comand-image:focus{
+  fill: rgba(33, 150, 243, 1);
+}
 .comand-image {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20px;
   height: 20px;
+  fill: #AFB1B8;
 }
-.comand-icon {
-  display: flex;
-}
+
 
 .klient {
   display: flex;
