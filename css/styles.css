@@ -59,6 +59,9 @@ img {
   height: 31px;
 }
 .logo2 {
+  display: flex;
+  width: 145px;
+  height: 31px;
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
@@ -174,10 +177,17 @@ img {
   height: 70px;
   border-radius: 4px;
 }
+.detail-icon{ 
+  display: flex;
+  width: 70px;
+    height: 70px;
+}
+.detail-fon:hover,
+.detail-fon:focus {
+fill:#2196f3;
 
-.li-detail:hover,
-.li-detail:focus {
-  fill: #2196f3;
+
+
 }
 .section-foto {
   padding-bottom: 94px;
@@ -430,9 +440,9 @@ img {
   padding-top: 16px;
   padding-bottom: 30px;
 }
-.comand-image:hover
+.comand-image:hover,
 .comand-image:focus{
-  fill: rgba(33, 150, 243, 1);
+  fill:#2196f3
 }
 .comand-image {
   display: flex;
@@ -531,6 +541,7 @@ img {
   padding-top: 94px;
 }
 .footer-title {
+  display: flex;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -539,13 +550,16 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-.social-footer {
-  display: flex;
-  width: 44px;
-  height: 44px;
-}
-/* .social-image-footer {
-} */
-.div-footer {
+
+.social-footer{
+   width: 206px;
+  height: 80px;
   display: flex;
 }
+ .social-image-footer {
+  display:inline-flex;
+  width: 204px;
+  height: 20px;
+fill:#ffffff ;
+} 
+
