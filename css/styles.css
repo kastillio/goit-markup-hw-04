@@ -96,11 +96,13 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   margin-right: 10px;
 }
 
 .link-mail-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -147,16 +149,19 @@ img {
   margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img-geroi.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section-title {
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: #ffffff;
 }
+
 .detail-fon {
   display: flex;
   width: 270px;
@@ -166,6 +171,7 @@ img {
   margin-bottom: 30px;
   margin-right: 0px;
   background: #f5f4fa;
+  fill: #2196f3;
 }
 .detail-image {
   display: flex;
@@ -173,14 +179,10 @@ img {
   height: 70px;
   border-radius: 4px;
 }
-.detail-icon {
-  display: flex;
-  width: 70px;
-  height: 70px;
-}
-.detail-fon:hover,
-.detail-fon:focus {
-  fill: #2196f3;
+
+.detail-image:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
 }
 .section-foto {
   padding-bottom: 94px;
@@ -294,7 +296,6 @@ img {
   color: #212121;
   margin-bottom: 10px;
   padding-top: 30px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
@@ -303,6 +304,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 16px;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -326,6 +328,20 @@ img {
 .tel-footer {
   margin-bottom: 75px;
 }
+.link-mail-tel-foot {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.link-mail-tel-foot:hover,
+.link-mail-tel-foot:focus {
+  color: #2196f3;
+}
 .adress {
   margin-bottom: 0px;
   padding: 0px;
@@ -333,6 +349,7 @@ img {
 .ul-link3 {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 9px;
   font-style: normal;
   font-weight: 400;
@@ -382,8 +399,9 @@ img {
   color: #ffffff;
 }
 .li-foto:hover,
-.li-foto:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.li-foto:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .namefoto {
@@ -420,24 +438,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
   padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
   gap: 10px;
 }
 .social {
+  display: flex;
   width: 44px;
   height: 44px;
-  display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 16px;
-  padding-bottom: 30px;
-}
-.comand-image:hover,
-.comand-image:focus {
-  fill: #2196f3;
+  align-items: center;
+  border-radius: 100%;
 }
 .comand-image {
   display: flex;
@@ -445,12 +456,17 @@ img {
   align-items: center;
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.social:hover,
+.social:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
 }
 
 .klient {
   display: flex;
-
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: #ffffff;
@@ -470,11 +486,7 @@ img {
   align-items: center;
   gap: 30px;
 }
-.iconli:hover,
-.iconli:focus .klient-image {
-  fill: #2196f3;
-  border-color: #2196f3;
-}
+ 
 .ul-klient:hover,
 .ul-klient:focus {
   border: 1px solid #2196f3;
@@ -487,10 +499,9 @@ img {
   height: 60px;
   fill: #afb1b8;
 }
-.klient-icon:hover {
-  display: flex;
-  fill: #2196f3;
-}
+ .klient-image:hover{
+fill: #2196f3;
+ }
 .text-klient {
   display: flex;
   justify-content: center;
@@ -570,9 +581,10 @@ img {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
 }
-.social-image-footer:hover,
-.social-image-footer:focus {
-  fill: #2196f3;
-  
+.li-footer-social:hover,
+.li-footer-social:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
 }
